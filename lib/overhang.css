@@ -6,98 +6,106 @@
  * paul@paulkr.com
  */
 
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-
 .overhang {
-  position    : fixed;
-  display     : none;
-  width       : 100%;
-  z-index     : 9999;
-  padding     : 15px 2px;
-  top         : 0;
-  left        : 0;
-  right       : 0;
-  font-family : "Roboto", sans-serif;
-  text-align  : center;
-  box-sizing  : border-box;
+  position: fixed;
+  display: none;
+  width: 100%;
+  z-index: 9999;
+  padding: 15px 2px;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .overhang-message {
-  color     : #FFF;
-  font-size : 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-.overhang-message strong { font-weight: bold; }
-.overhang-message a { color: inherit; }
-.overhang-message a:hover { text-decoration: none; }
+.overhang-message strong {
+  font-weight: bold;
+}
+
+.overhang-message a {
+  color: inherit;
+}
+
+.overhang-message a:hover {
+  text-decoration: none;
+}
 
 .overhang-overlay {
-  position         : fixed;
-  display          : block;
-  background-color : #000;
-  opacity          : .6;
-  top              : 0;
-  bottom           : 0;
-  left             : 0;
-  right            : 0;
-  z-index          : 9998;
+  position: fixed;
+  display: block;
+  background-color: #000;
+  opacity: .6;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9998;
 }
 
 .overhang-prompt-field {
-  height        : 30px;
-  width         : 250px;
-  border-radius : 5px;
-  border        : none;
-  display       : block;
-  margin-left   : auto;
-  margin-right  : auto;
-  margin-top    : 15px;
-  bottom        : 7px;
-  position      : relative;
-  padding-left  : 3px;
-  padding-right : 3px;
-  outline       : none;
-  font-family   : "Roboto", sans-serif;
-  font-size     : 15px;
+  height: 30px;
+  width: 250px;
+  border-radius: 5px;
+  border: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  bottom: 7px;
+  position: relative;
+  padding-left: 3px;
+  padding-right: 3px;
+  outline: none;
+  font-size: 15px;
 }
 
-.overhang-yes-option, .overhang-no-option {
-  min-width     : 50px;
-  height        : 30px;
-  border        : none;
-  outline       : none;
-  border-radius : 4px;
-  font-size     : 20px;
-  color         : #FFF;
-  cursor        : pointer;
-  margin        : 0 6px;
+.overhang-yes-option,
+.overhang-no-option {
+  min-width: 50px;
+  height: 30px;
+  border: 0;
+  outline: none;
+  border-radius: 4px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 6px;
 }
 
 .overhang-yes-option {
-  margin-left : 15px;
+  margin-left: 15px;
 }
 
 .overhang-close {
-  vertical-align : middle;
-  cursor         : pointer;
-  margin-top     : -4px;
-  padding-left   : 13px;
-  font-size      : 2.5em;
-  font-weight    : bold;
-  display        : inline-block;
-  line-height    : 20px;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-top: -10px;
+  padding-left: 13px;
+  font-size: 2em;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 20px;
+  color: #fff;
 }
 
 .overhang-close:after {
-  content : "\00d7";
+  content: '\00d7';
 }
 
 @media (max-width: 720px) {
   .overhang-close {
-    font-size   : 2em;
-    line-height : 14px;
+    font-size: 2em;
+    line-height: 14px;
   }
+
   .overhang-message {
-    font-size : 15px;
+    font-size: 15px;
   }
 }
